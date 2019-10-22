@@ -34,6 +34,19 @@ theme: minima
 plugins:
   - jekyll-feed
 
+# Collections
+collections:
+  a_alone:
+    output: true
+  b_beach:
+    output: true
+  c_city:
+    output: true
+  d_desktop:
+    output: true
+  e_earth:
+    output: true
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
