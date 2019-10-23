@@ -19,8 +19,17 @@
         <li class="nav-item active">
           <a class="nav-link" href="{{ "index.html" | relative_url }}">Home <span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{{ "gallery.html" | relative_url }}">Gallery</a>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="gallery.html" id="navbarDropdown" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Gallery
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                {%- for post in site.posts -%}
+                <a class="dropdown-item" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+                {%- endfor -%}
+      
+            </div>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="{{ "about.html" | relative_url }}">About</a>

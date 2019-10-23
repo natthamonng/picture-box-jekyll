@@ -11,17 +11,18 @@ layout: default
 
 <div class="container">
   <main class="row">
+      <article class="col-12 ">
+          {{ content }}
+      </article>
       {% assign max = 5 %}
-      {%- for thumb_num in (1..max) -%}
+      {%- for pic_num in (1..max) -%}
         {% assign post_filename = page.path | split:"/" | last | split:"." | first %}
-        {% assign thumbnail_path = '/assets/img/' | append: post_filename | append: "/thumbnail-" | append: thumb_num | append: ".jpg" %}
-        <div class="col-12 col-md-4">
-            <img src="{{ thumbnail_path | escape }}" alt="{{ page.title | escape }} thumbnail" class="img-thumbnail"/> 
+        {% assign photo_path = '/assets/img/' | append: post_filename | append: "/photo-" | append: pic_num | append: ".jpg" %}
+        <div class="col-12 mb-3">
+            <img src="{{ photo_path | escape }}" alt="{{ page.title | escape }} photo" class="pic-gallery"/> 
         </div>
       {%- endfor -%}
-    <article class="col-12 col-md-8">
-        {{ content }}
-    </article>
+    
   </main>
 </div>
 
