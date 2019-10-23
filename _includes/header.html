@@ -1,6 +1,35 @@
 <header class="site-header">
 
-  <div class="wrapper">
+  <nav class="navbar sticky-top navbar-expand-xl navbar-dark bg-dark">
+
+    <!-- Image and text -->
+    <a class="navbar-brand mb-0 h1" href="{{ "index.html" | relative_url }}">
+      <img src="{{ "/assets/img/logo.svg" | relative_url }}" width="30" height="30" class="d-inline-block align-top" alt="logo_picture_box">
+      Picture Box of McDoughnut
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="{{ "index.html" | relative_url }}">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ "gallery.html" | relative_url }}">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ "about.html" | relative_url }}">About</a>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+  <!--<div class="wrapper">
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
     {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
@@ -27,5 +56,6 @@
         </div>
       </nav>
     {%- endif -%}
-  </div>
+  </div>-->
+
 </header>
