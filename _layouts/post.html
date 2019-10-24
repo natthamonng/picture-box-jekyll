@@ -19,7 +19,7 @@ layout: default
         {% assign post_filename = page.path | split:"/" | last | split:"." | first %}
         {% assign photo_path = '/assets/img/' | append: post_filename | append: "/photo-" | append: pic_num | append: ".jpg" %}
         <div class="col-12 mb-3">
-            <img src="{{ photo_path | escape }}" alt="{{ page.title | escape }} photo" class="pic-gallery"/> 
+            <img src="{{ photo_path | relative_url }}" alt="{{ page.title | escape }} photo" class="pic-gallery"/> 
         </div>
       {%- endfor -%}
     

@@ -11,7 +11,7 @@ layout: default
     <pre>{{ post_filename }}</pre> -->
     <div class="card col-12 col-md-6" style="width: 18rem;">
       <!-- <img src="{{ post.img-card | escape }}" class="card-img-top" alt="{{ post.img-card-description | escape }}"> -->
-      <img src="{{ cover_path | escape }}" class="card-img-top" alt="{{ post.title | escape }} gallery cover image">
+      <img src="{{ cover_path | relative_url }}" class="card-img-top" alt="{{ post.title | escape }} gallery cover image">
       <div class="card-body">
         <h5 class="card-title">{{ post.title | escape }}</h5>
         <p class="card-text">{{ post.description | escape }}</p>
