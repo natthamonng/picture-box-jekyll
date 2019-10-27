@@ -1,30 +1,43 @@
 ---
 layout: default
 ---
-
-<div class="jumbotron jumbotron-fluid">
+<article>
+  <header class="jumbotron jumbotron-fluid">
     <div class="container">
       <h1 class="display-4">{{ page.title | escape }}</h1>
       <p class="lead">{{ page.description | escape }}</p>
+      <p class="post-meta">
+        <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+          {{ page.date | date: date_format }}
+        </time>
+        {%- if page.author -%}
+        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card"
+            itemprop="name">{{ page.author | escape }}</span></span>
+        {%- endif -%}</p>
     </div>
-</div>
+  </header>
 
-<div class="container">
-  <main class="row">
-      <article class="col-12 ">
-          {{ content }}
-      </article>
+  <main class="container">
+    <div class="row">
+      <div class="col-12 ">
+        {{ content }}
+      </div>
       {% assign max = 5 %}
       {%- for pic_num in (1..max) -%}
-        {% assign post_filename = page.path | split:"/" | last | split:"." | first %}
-        {% assign photo_path = '/assets/img/' | append: post_filename | append: "/photo-" | append: pic_num | append: ".jpg" %}
-        <div class="col-12 mb-3">
-            <img src="{{ photo_path | relative_url }}" alt="{{ page.title | escape }} photo" class="pic-gallery"/> 
-        </div>
+      {% assign post_filename = page.path | split:"/" | last | split:"." | first %}
+      {% assign photo_path = '/assets/img/' | append: post_filename | append: "/photo-" | append: pic_num | append: ".jpg" %}
+      <div class="col-12 mb-3">
+        <img src="{{ photo_path | relative_url }}" alt="{{ page.title | escape }} photo"
+          class="pic-gallery shadow p-3 mb-5 bg-white rounded" />
+      </div>
       {%- endfor -%}
-    
+    </div>
   </main>
-</div>
+
+  {%- include go-top-button.html -%}
+
+</article>
 
 <!--default post.html by template minima-->
 <!--<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
