@@ -1,0 +1,15 @@
+$border-default: rgb(199, 194, 194) solid 1px;
+
+$colors: (
+    primary: #007bff,
+    secondary: #6c757d,
+    success: #28a745,
+    danger: #dc3545,
+    warning: #ffc107,
+    info: #17a2b8,
+    light: #f8f9fa,
+    dark: #343a40,
+);
+
+// ex: map-get($colors, primary) --> #007bff
+// ex: (with utilities.scss) colors(primary) --> #007bff
