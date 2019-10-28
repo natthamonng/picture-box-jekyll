@@ -1,0 +1,10 @@
+#!/bin/sh
+VENDOR_DIR='assets/vendor/'
+
+set -e
+
+echo "Copying JS files..."
+mkdir -p $VENDOR_DIR
+cp node_modules/jquery/dist/jquery.min.js $VENDOR_DIR
+cp node_modules/popper.js/dist/umd/popper.min.js $VENDOR_DIR
+cp node_modules/bootstrap/dist/js/bootstrap.min.js $VENDOR_DIR
