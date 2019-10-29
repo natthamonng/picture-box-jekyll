@@ -14,14 +14,14 @@
   </main>
 
   {%- include go-top-button.html -%}
-  {%- include footer.html -%}
+  <!--{%- include footer.html -%}-->
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="{{'/node_modules/jquery/dist/jquery.min.js' | prepend: site.baseurl}}"></script>
-	<script src="{{'/node_modules/popper.js/dist/umd/popper.min.js' | prepend: site.baseurl}}"></script>
-	<script src="{{'/node_modules/bootstrap/dist/js/bootstrap.min.js' | prepend: site.baseurl}}"></script>
-  
+  <script src="{{'/assets/vendor/jquery.min.js' | prepend: site.baseurl}}"></script>
+  <script src="{{'/assets/vendor/popper.min.js' | prepend: site.baseurl}}"></script>
+  <script src="{{'/assets/vendor/bootstrap.min.js' | prepend: site.baseurl}}"></script>
+
   <!--CDN Bootstrap JS-->
   <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
@@ -34,7 +34,7 @@
   </script>
 -->
 
-  
+
 </body>
 
 </html>

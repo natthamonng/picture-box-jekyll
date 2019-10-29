@@ -18,9 +18,6 @@
   },
   "homepage": "https://github.com/natthamonng/20191022-Picture-box-jekyll#readme",
   "devDependencies": {
-    "node-sass": "^4.13.0"
-  },
-  "dependencies": {
     "bootstrap": "^4.3.1",
     "jquery": "^3.4.1",
     "popper.js": "^1.16.0"
