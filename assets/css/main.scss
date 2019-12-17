@@ -1,3 +1,6 @@
+---
+# front matter
+---
 @import "_variables.scss";
 @import "_utilities.scss";
 @import "_goTopBtn.scss";
@@ -8,5 +11,5 @@
 }
 
 .pic-gallery {
-    max-width: 1000px;
+    max-width: 80vw;
 }
