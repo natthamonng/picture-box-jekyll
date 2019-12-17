@@ -1,9 +1,10 @@
 title: Picture Box of McDoughnut
+author: Natthamon Kharoubi 
 email: natthamon.ng@gmail.com
 description: >-
   Website created for study purpose
-baseurl: "/20191022-Picture-box-jekyll" # the subpath of your site, e.g. /blog
-url: "https://natthamonng.github.io/20191022-Picture-box-jekyll/" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/picture-box-jekyll" # the subpath of your site, e.g. /blog
+url: "https://natthamonng.github.io/picture-box-jekyll/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ngnatthamon
 github_username:  natthamonng
 
