@@ -1,6 +1,6 @@
 # 20191022-Picture-box-jekyll
 
-(live!)[https://natthamonng.github.io/20191022-Picture-box-jekyll/]
+[live!](https://natthamonng.github.io/20191022-Picture-box-jekyll/)
 
 ## Convention
 
