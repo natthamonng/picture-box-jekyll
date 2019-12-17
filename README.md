@@ -1,6 +1,9 @@
 # Picture-box-jekyll
 
-[live!](https://natthamonng.github.io/20191022-Picture-box-jekyll/)
+- static site generator: jekyll
+- css framwork: bootstrap 
+
+[live!](https://natthamonng.github.io/picture-box-jekyll/)
 
 ## Convention
 
